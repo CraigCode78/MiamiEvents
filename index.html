@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Analysis Scorecard</title>
+</head>
+<body>
+    <h1>Event Analysis Scorecard</h1>
+    <form action="/submit" method="post">
+        <div>
+            <label for="eventName">Event Name:</label><br>
+            <input type="text" id="eventName" name="eventName" required><br>
+        </div>
+
+        <div>
+            <label for="location">Location:</label><br>
+            <input type="text" id="location" name="location" required><br>
+        </div>
+
+        <div>
+            <label for="dateAndTime">Date and Time:</label><br>
+            <input type="text" id="dateAndTime" name="dateAndTime" required><br>
+        </div>
+
+        <div>
+            <label for="organizer">Organizer/Host:</label><br>
+            <input type="text" id="organizer" name="organizer" required><br>
+        </div>
+
+        <div>
+            <label for="eventType">Event Type:</label><br>
+            <select id="eventType" name="eventType" required>
+                <option value="officialArtBaselEvent">Official Art Basel Event</option>
+                <option value="associatedArtShow">Associated Art Show</option>
+                <option value="culturalEvent">Cultural Event</option>
+                <option value="privateEvent">Private Event</option>
+                <option value="publicEvent">Public Event</option>
+            </select><br>
+        </div>
+
+        <div>
+            <label for="brandUsage">Brand and Name Usage:</label><br>
+            <select id="brandUsage" name="brandUsage" required>
+                <option value="directUse">Direct Use of "Art Basel" Name</option>
+                <option value="indirectAssociation">Indirect Association with Art Basel</option>
+                <option value="noMention">No Mention of Art Basel</option>
+            </select><br>
+        </div>
+
+        <!-- Repeat similar structure for other required fields -->
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
